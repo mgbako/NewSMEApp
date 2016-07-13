@@ -1,0 +1,55 @@
+<ion-modal-view ng-controller="SignUpController" id="signUp"> 
+  <i class="i pull-right btn-floating ion-close-round close-btn" ng-click="modalService.closeModal()"></i>
+  <ion-content>
+   <div class="logo">
+     <img src="img/logo.jpg" alt="" class="img-fluid">
+   </div>
+    <div class="form-container">
+      <form name="myform" ng-submit="registerUser()" novalidate>
+          <div class="list">
+            <label class="item item-input item-floating-label">
+              <span class="input-label">First Name</span>
+              <input type="text" placeholder="First Name" name="firstname" ng-model="user.firstname" ng-required="true">
+            </label>
+            <label class="item item-input item-floating-label">
+              <span class="input-label">Last Name</span>
+              <input type="text" placeholder="Last Name" name="lastname" ng-model="user.lastname" ng-required="true">
+            </label>
+            <label class="item item-input item-floating-label">
+              <span class="input-label">Username</span>
+              <input type="text" placeholder="Username" name="username" ng-model="user.username" ng-required="true">
+            </label>
+            <label class="item item-input item-floating-label">
+              <span class="input-label">Phone Number</span>
+              <input type="text" placeholder="Phone number" name="phone_no" ng-model="user.phone_no" ng-required="true">
+            </label>
+            <label class="item item-input item-floating-label">
+              <span class="input-label">Gender</span>
+              <input type="text" placeholder="Gender" name="gender" ng-model="user.gender" ng-required="true">
+            </label>
+            <label class="item item-input item-floating-label">
+              <span class="input-label">Company Name</span>
+              <input type="text" placeholder="Company name" name="company" ng-model="user.company" ng-required="true">
+            </label>
+            <label class="item item-input item-floating-label">
+              <span class="input-label">Email</span>
+              <input type="email" placeholder="Email" name="email" ng-model="user.email" ng-required="true">
+            </label>
+            <label class="item item-input item-floating-label">
+              <span class="input-label">Password</span>
+              <input type="password" placeholder="Password" name="password" ng-model="user.password" ng-required="true">
+            </label>
+          </div>
+          <div class="padding pull-right">
+            <button class="btn btn-block btn-floating signin-btn pull-right" ng-disabled="myform.$invalid">
+              Register
+            </button>
+          </div>
+       </form>
+    </div>
+    
+  </ion-content>
+  <div class="item item-divider signUp-footer">
+    <p>Already have an account? <a ng-click="modalService.openModal(1)">Login</a></p>
+  </div>
+</ion-modal-view>

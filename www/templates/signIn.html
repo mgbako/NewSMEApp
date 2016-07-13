@@ -1,0 +1,32 @@
+<ion-modal-view ng-controller="SignInController" id="signIn"> 
+  <i class="i pull-right btn-floating ion-close-round close-btn" ng-click="modalService.closeModal()"></i>
+  <ion-content>
+   <div class="logo">
+     <img src="img/logo.jpg" alt="" class="img-fluid">
+   </div>
+    <div class="form-container">
+       <form action="">
+          <div class="list">
+            <label class="item item-input item-floating-label">
+              <span class="input-label">Email</span>
+              <input type="text" placeholder="Email">
+            </label>
+            <label class="item item-input item-floating-label">
+              <span class="input-label">Password</span>
+              <input type="text" placeholder="Password">
+            </label>
+          </div>
+          <div class="padding pull-right">
+            <button class="btn btn-md btn-block btn-floating signin-btn pull-right">
+              Sign In
+            </button>
+            <p class="forgot-password">Forgoten Password?</p>
+          </div>
+       </form>
+    </div>
+    
+   </ion-content>
+   <div class="item item-divider signIn-footer">
+    Do not have account? <a ng-click="modalService.openModal(2)">Create One</a>
+  </div>
+</ion-modal-view>

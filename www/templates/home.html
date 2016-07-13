@@ -1,0 +1,64 @@
+<ion-view view-title="The Marketplace">
+  <ion-content class="homepage">
+	<div class="card sme-banner">
+		<img class="img-fluid" ng-src="http://mdbootstrap.com/images/regular/nature/img%20(28).jpg" alt="Card image cap">
+	</div>
+	<section id="home-content">
+		<div class="card sme directory" ui-sref="themarketplace.directory">
+			<div class="row">
+				<div class="col col-35">
+					<button type="button" class="btn btn-primary-outline">View Directory</button>
+				</div>
+				<div class="col col-65">
+					<img class="img-fluid" ng-src="http://mdbootstrap.com/images/regular/nature/img%20(28).jpg" alt="Card image cap">
+				</div>
+			</div>
+		</div>
+		<div class="card sme brief" ui-sref="themarketplace.brief">
+			<div class="row">
+				<div class="col col-65">
+					<img class="img-fluid" ng-src="http://mdbootstrap.com/images/regular/nature/img%20(28).jpg" alt="Card image cap">
+				</div>
+				<div class="col col-35">
+					<button type="button" class="btn btn-primary-outline">Post a Job</button>
+				</div>
+			</div>
+		</div>
+		<div class="card sme deals" ui-sref="deals.marketplace">
+			<div class="row">
+				<div class="col col-35">
+					<div class="btn btn-primary-outline" ui-sref="deals.marketplace">Make Deal</div>
+				</div>
+				<div class="col col-65">
+					<img class="img-fluid" ng-src="http://mdbootstrap.com/images/regular/nature/img%20(28).jpg" alt="Card image cap">
+				</div>
+			</div>
+		</div>
+		<div class="card sme communityHome" ui-sref="themarketplace.community">
+			<div class="row">
+				<div class="col col-65">
+					<img class="img-fluid" ng-src="http://mdbootstrap.com/images/regular/nature/img%20(28).jpg" alt="Card image cap">
+				</div>
+				<div class="col col-35">
+					<button type="button" class="btn btn-primary-outline">View Community</button>
+				</div>
+			</div>
+		</div>
+		<div class="card sme resources" ui-sref="themarketplace.resources">
+			<div class="row">
+				<div class="col col-35">
+					<button type="button" class="btn btn-primary-outline">View Resources</button>
+				</div>
+				<div class="col col-65">
+					<img class="img-fluid" ng-src="http://mdbootstrap.com/images/regular/nature/img%20(28).jpg" alt="Card image cap">
+				</div>
+			</div>
+		</div>
+	</section>
+	
+  </ion-content>
+  <div class="bar bar-footer">
+	  <button class="button button-calm btn btn-primary pull-left btn-floating icon-left ion-log-in" ng-click="modalService.openModal(1)">&nbsp;Sign In</button>
+	  <button class="button button-calm btn btn-primary pull-right btn-floating" ng-click="modalService.openModal(2)">Sign Up</button>
+	</div>
+</ion-view>
